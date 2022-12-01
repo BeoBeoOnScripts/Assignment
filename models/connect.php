@@ -1,6 +1,6 @@
 <?php
     function connect($query){
-        $connection = new PDO("mysql:host=localhost;dbname=we18103;charset=utf8","root","");
+        $connection = new PDO("mysql:host=localhost;dbname=assignment;charset=utf8","root","");
         $stmt = $connection -> prepare($query);
         $stmt -> execute();
         return $stmt;
